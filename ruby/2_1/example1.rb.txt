@@ -1,0 +1,18 @@
+bash-3.2$ irb
+irb(main):001:0> properties = ['object oriented', 'duck typed', 'productive', 'fun']
+properties = ['object oriented', 'duck typed', 'productive', 'fun']
+=> ["object oriented", "duck typed", "productive", "fun"]
+irb(main):002:0> properties.each {|propertie| puts "Ruby is #{property}."}
+properties.each {|propertie| puts "Ruby is #{property}."}
+NameError: undefined local variable or method `property' for main:Object
+	from (irb):2:in `block in irb_binding'
+	from (irb):2:in `each'
+	from (irb):2
+	from /usr/bin/irb:12:in `<main>'
+irb(main):003:0> properties.each {|property| puts "Ruby is #{property}."}
+properties.each {|property| puts "Ruby is #{property}."}
+Ruby is object oriented.
+Ruby is duck typed.
+Ruby is productive.
+Ruby is fun.
+=> ["object oriented", "duck typed", "productive", "fun"]
